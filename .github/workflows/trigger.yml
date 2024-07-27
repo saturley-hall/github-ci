@@ -15,7 +15,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.issue.number,
-              body: '👋 Hi! Thank you for contributing to the project.\n Just a reminder: PRs would not trigger full CI run by default. You can run CI tests by you can Comment `/ready` on the PR.\n\n🚀'
+              body: '👋 Hi! Thank you for contributing to the project.\n Just a reminder: PRs would not trigger full CI run by default. You can run CI tests by commenting `/ready` on the PR.\n\n🚀'
             })
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
