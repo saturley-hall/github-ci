@@ -1,4 +1,4 @@
-name: PR Reminder Comment Bot
+name: PR Reminder Comment
 on:
   pull_request_target:
     types: [opened]
@@ -7,7 +7,7 @@ jobs:
   pr_reminder:
     runs-on: ubuntu-latest
     steps:
-      - name: Remind to run full CI on PR
+      - name: Comment to run full CI on PR
         uses: actions/github-script@v6
         with:
           script: |
@@ -15,7 +15,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.issue.number,
-              body: '👋 Hi! Thank you for contributing to the project.\n Just a reminder: PRs would not trigger full CI run by default. You can run CI tests by commenting `/ready` on the PR.\n\n🚀'
+              body: '👋 Hi! \nThank you for contributing to the project.\n Just a reminder: PRs would not trigger full CI run by default. You can run CI tests by commenting `/ready` on the PR.\n🚀'
             })
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
