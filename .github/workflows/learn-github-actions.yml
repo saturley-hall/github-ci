@@ -5,8 +5,9 @@ on:
     branches:
     - main
 jobs:
-  my-job:
+  run-test:
     runs-on: self-hosted
+    if: github.event.issue.pull_request && contains(github.event.comment.body, '/ready')
     steps:
       - name: my-step
-        run: echo "Hello World!"
+        run: echo "Hello World!
