@@ -1,9 +1,8 @@
-name: learn-github-actions
-run-name: ${{ github.actor }} is learning GitHub Actions
+name: trigger-CI
+run-name: ${{ github.actor }} is Trigerring CI
 on:
-  pull_request:
-    branches:
-    - main
+  issue_comment:
+    types: [created]
 jobs:
   run-test:
     runs-on: self-hosted
