@@ -15,6 +15,7 @@
 
 | Triton relase version	 | NGC Tag	 | Python version	 | vLLM version | CUDA version | CUDA Driver version | Size |
 | --- | --- | --- | --- | --- | --- | --- | 
+| 24.09 | nvcr.io/nvidia/tritonserver:24.09-vllm-python-py3 | Python 3.10.12 | 0.5.3.post1 | 12.6.1.006 | 560.35.03 | 19G
 | 24.08 | nvcr.io/nvidia/tritonserver:24.08-vllm-python-py3 | Python 3.10.12  | 0.5.0 post1 | 12.6.0.022 | 560.35.03 | 19G |
 | 24.07 | nvcr.io/nvidia/tritonserver:24.07-vllm-python-py3 | Python 3.10.12  | 0.5.0 post1 | 12.5.1 | 555.42.06 | 19G |
 | 24.06 | nvcr.io/nvidia/tritonserver:24.06-vllm-python-py3 | Python 3.10.12  | 0.4.3 | 12.5.0.23 | 555.42.02 | 18G |
