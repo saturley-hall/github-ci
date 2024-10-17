@@ -3,7 +3,7 @@
 ## Container Name: trtllm-python-py3
 
 | Triton relase version	 | NGC Tag	 | Python version	 | Torch version | TensorRT version | TensorRT-LLM version | ONNX version | CUDA version | CUDA Driver version | Size |
-| --- | --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | 
 | 24.09 | nvcr.io/nvidia/tritonserver:24.09-trtllm-python-py3 | Python 3.10.12  | 2.4.0a0%2B3bcc3cddb5.nv24.7 | 10.4.0 | 0.13.0 | 1.16.2 | 12.5.1.007 | 555.42.06 | 21G |
 | 24.08 | nvcr.io/nvidia/tritonserver:24.08-trtllm-python-py3 | Python 3.10.12 | 2.4.0a0%2B3bcc3cddb5.nv24.7 | 10.3.0 | 0.12.0 | 1.16.2 | 12.5.1.007 | 555.42.06 | 21G |
 | 24.07 | nvcr.io/nvidia/tritonserver:24.07-trtllm-python-py3 | Python 3.10.12 | 2.4.0a0%2B07cecf4168.nv24.5 | 10.1.0 | 0.11.0 | 1.16.1 | 12.4.1.003 | 550.54.15 | 23G |
