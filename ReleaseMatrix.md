@@ -1,8 +1,8 @@
 
 # Release Compatibility Matrix
- 1. [Container Name: trtllm-python-py3](#subheading-1)
- 2. [Container Name: vllm-python-py3](#subheading-2)
- 3. [ONNX Versions](#sub-heading-3)
+ 1. [Container Name: trtllm-python-py3](#container-name-trtllm-python-py3)
+ 2. [Container Name: vllm-python-py3](#container-name-vllm-python-py3)
+ 3. [ONNX Versions](#onnx-versions)
 
 ## Container Name: trtllm-python-py3
 
