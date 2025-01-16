@@ -1,0 +1,10 @@
+name: curl
+on: push
+jobs:
+  my-job:
+    runs-on: self-hosted
+    steps:
+      - name: my-step
+        run: |
+          #!/bin/bash
+          curl --request POST --header "PRIVATE-TOKEN:${{ secrets.MIRROR_TOKEN }}" "${{ secrets.MIRROR_URL }}"
