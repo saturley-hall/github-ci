@@ -7,7 +7,11 @@ on:
 jobs:
   Label:
     runs-on: ubuntu-latest
-    if: ${{ !contains(fromJSON('["OWNER", "MEMBER"]'), github.event.issue.author_association)}}
+    if: ${{ github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name }}
+    permissions:
+      actions: read
+      issues: write
+      pull-requests: write
 
     steps: 
       - name: Adding Label
