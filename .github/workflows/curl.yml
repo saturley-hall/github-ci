@@ -2,7 +2,7 @@ name: curl
 on: push
 jobs:
   my-job:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - name: my-step
         run: |
