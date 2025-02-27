@@ -1,13 +1,13 @@
-name: Label PRs from external contributors
+name: Label PRs from internal contributors
 
 on:
   pull_request_target:
     types: [opened]
 
 jobs:
-  Label-Issue:
+  Label:
     runs-on: ubuntu-latest
-    if: github.event.repository.owner.id == github.event.sender.id
+    if: ${{ contains(fromJSON('["OWNER", "MEMBER"]'), github.event.issue.author_association)}}
     steps: 
       - name: Adding Label
         uses: actions/github-script@v7
@@ -23,5 +23,5 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.issue.number,
-              labels: ["owner-contribution"]
+              labels: ["internal-contribution"]
             });
