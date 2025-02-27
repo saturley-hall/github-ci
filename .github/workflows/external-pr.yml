@@ -3,6 +3,7 @@ name: Label PRs from external contributors
 on:
   pull_request_target:
     types: [opened]
+    branches: [main]
 
 jobs:
   Label:
