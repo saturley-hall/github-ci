@@ -7,4 +7,4 @@ jobs:
       - name: my-step
         run: |
           #!/bin/bash
-          curl --request POST --header "PRIVATE-TOKEN:${{ secrets.MIRROR_TOKEN }}" "${{ secrets.MIRROR_URL }}"
+          # curl --request POST --header "PRIVATE-TOKEN:${{ secrets.MIRROR_TOKEN }}" "${{ secrets.MIRROR_URL }}"
